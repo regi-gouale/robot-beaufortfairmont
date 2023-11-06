@@ -2,4 +2,6 @@
 
 *** Variables ***
 ${BROWSER}  Chrome
-${URL}  http://inv.beaufortfairmont.com/
+${BEAUFORTFAIRMONT_URL}  http://inv.beaufortfairmont.com/
+
+${add_invoice_href}  /addInvoice
