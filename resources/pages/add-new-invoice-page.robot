@@ -39,3 +39,14 @@ Click On Create Button
 
 Click On Cancel Button
     Click Button  xpath://*[@id="content-wrapper"]/div/div[2]/div/div/form/a[2]/button
+
+Fill In All Invoice Details
+    [Arguments]  ${invoice_number}  ${company_name}  ${type_of_work}  ${amount}  ${status}  ${due_date}  ${description}
+    Fill In Invoice Number  ${invoice_number}
+    Fill In Company Name  ${company_name}
+    Fill In Type Of Work  ${type_of_work}
+    Fill In Amount  ${amount}
+    Set Invoice Status  ${status}
+    Fill In Due Date  ${due_date}
+    Fill In Description  ${description}
+    Capture Page Screenshot
